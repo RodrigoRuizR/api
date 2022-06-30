@@ -22,7 +22,7 @@ const animals = [
 ]
 
 app.get('/', (req, res) => {
-    res.send('Segun deberia de jalar');
+    res.send('YA JALO WEEY');
 });
 
 app.get('/prueba', (req, res) => {
