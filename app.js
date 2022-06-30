@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const PORT = process.env.PORT || 3010;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -22,7 +22,11 @@ const animals = [
 ]
 
 app.get('/', (req, res) => {
-    res.send('API de Node JS');
+    res.send('Segun deberia de jalar');
+});
+
+app.get('/prueba', (req, res) => {
+    res.send('Segun deberia de jalar x2');
 });
 
 app.get('/api/animals', (req, res) => {
